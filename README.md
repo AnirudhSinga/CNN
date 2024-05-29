@@ -1,6 +1,6 @@
 # CNN
 
-##Normal dataset
+## Normal dataset
 
 Considered MNIST dataset, flattened 28x28 each image into a 784 dimensional vector. Next, Created a NN with 784 inputs are fully connected to 1000 neurons(i.e., hidden layer)
 then those fully connected to 10 output identity neurons to classify ten 0-9 handwritten numbers. Cross Entropy loss function by default includes softmax in the code. Experimented with Sigmoid and Relu activation functions along with different optimizers i.e., SGD and Adam. Then plotted training losses, test losses, training accuracy and test accuracy over 50 epochs. Overall, observed that the performance of Adam is better compared to SGD optimizer. Specifically, the test accuracy falls in the range of about 96% - 97.5% for all 4 NN’s with Adam and 70% - 78% for 3 NN’s, but with the Sigmoid function, it’s about 50% with SGD).
@@ -11,7 +11,7 @@ The training and test accuracy of CNN is improved compared to other NN’s for b
 
 Max pooling layers help in downsampling the CNN output and highlights most important features (we can observe the image is sort of zoomed compared to other two images while retaining features).
 
-##Permuted dataset
+## Permuted dataset
 
 Repeated all the above steps for permuted dataset by permuting the pixels in the image with the same seed value. Noticed that the performance of permuted dataset has remained
 comparable to the normal dataset behavior. The classification test accuracy is around 97% with Adam optimizer for the normal neural network (NN), convolutional neural network
